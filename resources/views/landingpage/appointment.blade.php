@@ -34,7 +34,7 @@
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-            <a href="/" class="navbar-brand p-0">
+            <a href="{{ route('landing') }}" class="navbar-brand p-0">
                 <h1 class="text-primary m-0">Rileksia</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -42,7 +42,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="/" class="nav-item nav-link active">Beranda</a>
+                    <a href="{{ route('landing') }}" class="nav-item nav-link active">Beranda</a>
                     <a href="#contact" class="nav-item nav-link">Hubungi</a>
                 </div>
             </div>
@@ -56,7 +56,7 @@
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Reservasi Sekarang</h1>
                 <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('landing') }}">Beranda</a></li>
                     <li class="breadcrumb-item active text-primary">Reservasi</li>
                 </ol>
         </div>
@@ -231,7 +231,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Layanan Terapi</h4>
-                        <a href="/"><i class="fas fa-angle-right me-2"></i>Semua Layanan</a>
+                        <a href="{{ route('landing') }}"><i class="fas fa-angle-right me-2"></i>Semua Layanan</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">

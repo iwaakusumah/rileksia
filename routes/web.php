@@ -10,7 +10,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
-    Route::get('/', [LandingController::class, 'showLanding']);
+    Route::get('/', [LandingController::class, 'showLanding'])->name('landing');
     Route::get('/appointment', [LandingController::class, 'showAppointment'])->name('appointment');
     Route::post('/send-booking', [BookingController::class, 'storeGuest'])->name('store-booking');
 });
