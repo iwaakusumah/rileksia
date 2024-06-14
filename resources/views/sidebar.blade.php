@@ -14,7 +14,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="{{ route('dashboard') }}">
+        <a class="nav-link" href="{{ route('dashboard.index') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -29,7 +29,7 @@
 
     <!-- Nav Item - Booking Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('bookings') }}">
+        <a class="nav-link" href="{{ route('bookings.index') }}">
             <i class="fas fa-fw fa-clipboard-list"></i>
             <span>Pesanan</span></a>
     </li>
@@ -57,7 +57,7 @@
 
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('customers') }}">
+        <a class="nav-link" href="{{ route('customers.index') }}">
             <i class="fas fa-fw fa-user-friends"></i>
             <span>Pelanggan</span></a>
     </li>
@@ -66,7 +66,7 @@
     @if (Auth::user()->role === 'Super Admin')
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('users') }}">
+        <a class="nav-link" href="{{ route('users.index') }}">
             <i class="fas fa-fw fa-user"></i>
             <span>Pengguna</span></a>
     </li>
