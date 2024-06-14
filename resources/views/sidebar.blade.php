@@ -29,7 +29,7 @@
 
     <!-- Nav Item - Booking Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="/bookings">
+        <a class="nav-link" href="{{ route('bookings') }}">
             <i class="fas fa-fw fa-clipboard-list"></i>
             <span>Pesanan</span></a>
     </li>
@@ -57,7 +57,7 @@
 
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="/customers">
+        <a class="nav-link" href="{{ route('customers') }}">
             <i class="fas fa-fw fa-user-friends"></i>
             <span>Pelanggan</span></a>
     </li>
@@ -66,7 +66,7 @@
     @if (Auth::user()->role === 'Super Admin')
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="/users">
+        <a class="nav-link" href="{{ route('users') }}">
             <i class="fas fa-fw fa-user"></i>
             <span>Pengguna</span></a>
     </li>
