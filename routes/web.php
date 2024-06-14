@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
     Route::get('/', [LandingController::class, 'showLanding']);
-    Route::get('/appointment', [LandingController::class, 'showAppointment']);
+    Route::get('/appointment', [LandingController::class, 'showAppointment'])->name('appointment');
     Route::post('/send-booking', [BookingController::class, 'storeGuest'])->name('store-booking');
 });
 Route::middleware(['auth'])->group(function () {
