@@ -65,7 +65,7 @@
                             kami, Temukan kembali ketenangan dan keseimbangan melalui layanan terapi
                             kami yang komprehensif.
                         </p>
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/appointment">Reservasi
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="{{ route('appointment') }}">Reservasi
                             Sekarang</a>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                             kami, Temukan kembali ketenangan dan keseimbangan melalui layanan terapi
                             kami yang komprehensif.
                         </p>
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/appointment">Reservasi
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="{{ route('appointment') }}">Reservasi
                             Sekarang</a>
                     </div>
                 </div>
@@ -272,7 +272,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
-            <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2" href="/appointment">Reservasi Sekarang</a>
+            <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2" href="{{ route('appointment') }}">Reservasi Sekarang</a>
         </div>
     </div>
     <!-- Services End -->
